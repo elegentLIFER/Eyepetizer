@@ -25,9 +25,6 @@ import kotlinx.coroutines.withContext
 
 /**
  * 视频相关，对应的仓库数据管理。
- *
- * @author vipyinzhiwei
- * @since  2020/5/15
  */
 class VideoRepository(private val dao: VideoDao, private val network: EyepetizerNetwork) {
 

@@ -51,9 +51,7 @@ import kotlinx.parcelize.Parcelize
 
 /**
  * 视频详情界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/14
+ 4
  */
 class NewDetailActivity : BaseActivity() {
 

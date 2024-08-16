@@ -27,9 +27,7 @@ import retrofit2.http.Url
 
 /**
  * 与视频页面相关API请求。
- *
- * @author vipyinzhiwei
- * @since  2020/5/14
+ 4
  */
 interface VideoService {
 

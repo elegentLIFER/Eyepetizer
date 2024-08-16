@@ -31,9 +31,6 @@ import com.shuyu.gsyvideoplayer.video.base.GSYBaseVideoPlayer
 
 /**
  * ViewPager列表自动播放监听类。
- *
- * @author vipyinzhiwei
- * @since 2020/5/26
  */
 class AutoPlayPageChangeListener(private val viewPager: ViewPager2, private var defaultPosition: Int, private val itemPlayId: Int) : ViewPager2.OnPageChangeCallback() {
 

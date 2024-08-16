@@ -33,9 +33,7 @@ import com.flyco.tablayout.listener.OnTabSelectListener
 
 /**
  * Fragment基类，适用场景：页面含有ViewPager+TabLayout的界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/1
+
  */
 abstract class BaseViewPagerFragment : BaseFragment() {
 

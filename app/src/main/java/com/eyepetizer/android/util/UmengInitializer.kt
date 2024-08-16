@@ -7,9 +7,6 @@ import com.umeng.commonsdk.UMConfigure
 
 /**
  * App Startup
- *
- * @author vipyinzhiwei
- * @since  2021/5/12
  */
 class UmengInitializer : Initializer<Unit> {
 

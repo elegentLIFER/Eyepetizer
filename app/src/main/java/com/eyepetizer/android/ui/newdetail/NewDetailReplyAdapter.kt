@@ -35,9 +35,7 @@ import com.eyepetizer.android.util.GlobalUtil
 
 /**
  * 视频详情-评论列表绑定的适配器
- *
- * @author vipyinzhiwei
- * @since  2020/5/14
+ 4
  */
 class NewDetailReplyAdapter(val activity: NewDetailActivity, val dataList: List<VideoReplies.Item>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

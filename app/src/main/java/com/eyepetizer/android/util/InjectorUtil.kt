@@ -29,9 +29,6 @@ import com.eyepetizer.android.ui.search.SearchViewModelFactory
 
 /**
  * 应用程序逻辑控制管理类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/2
  */
 object InjectorUtil {
 

@@ -32,9 +32,6 @@ import java.net.URLDecoder
 
 /**
  * actionUrl事件处理工具类。通过截取actionUrl相关信息，并进行相应事件处理。
- *
- * @author vipyinzhiwei
- * @since  2020/6/14
  */
 object ActionUrlUtil {
 

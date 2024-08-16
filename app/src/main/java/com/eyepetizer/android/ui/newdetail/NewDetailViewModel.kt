@@ -28,9 +28,6 @@ import com.eyepetizer.android.logic.network.api.VideoService
 
 /**
  * 视频详情界面绑定的ViewModel。
- *
- * @author vipyinzhiwei
- * @since  2020/5/14
  */
 class NewDetailViewModel(repository: VideoRepository) : ViewModel() {
 

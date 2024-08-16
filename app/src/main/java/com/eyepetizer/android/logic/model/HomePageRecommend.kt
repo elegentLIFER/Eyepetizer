@@ -18,9 +18,6 @@ package com.eyepetizer.android.logic.model
 
 /**
  * 首页-推荐列表，响应实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/6
  */
 data class HomePageRecommend(val itemList: List<Item>, val count: Int, val total: Int, val nextPageUrl: String?, val adExist: Boolean) : Model() {
 

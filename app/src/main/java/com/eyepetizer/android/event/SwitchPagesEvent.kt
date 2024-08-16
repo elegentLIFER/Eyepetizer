@@ -18,8 +18,5 @@ package com.eyepetizer.android.event
 
 /**
  * EventBus通知Tab页切换界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/19
  */
 class SwitchPagesEvent(val activityClass: Class<*>? = null) : MessageEvent()

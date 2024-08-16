@@ -26,9 +26,6 @@ import java.net.UnknownHostException
 
 /**
  * 获取网络请求返回的异常信息。
- *
- * @author vipyinzhiwei
- * @since  2020/5/29
  */
 object ResponseHandler {
 

@@ -11,9 +11,6 @@ import java.io.IOException
 
 /**
  * 处理gson解析时类型不匹配或者空值问题。https://www.jianshu.com/p/d8dcc656a06e。
- *
- * @author vipyinzhiwei
- * @since  2020/5/30
  */
 class GsonTypeAdapterFactory : TypeAdapterFactory {
 

@@ -44,9 +44,7 @@ import kotlinx.coroutines.launch
 
 /**
  * 社区-推荐列表界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/1
+
  */
 class CommendFragment : BaseFragment() {
 

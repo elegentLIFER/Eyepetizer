@@ -25,9 +25,6 @@ import com.shuyu.gsyvideoplayer.video.base.GSYVideoView
 
 /**
  * 视频详情页面对应的视频播放器。
- *
- * @author vipyinzhiwei
- * @since 2020/5/26
  */
 class NewDetailVideoPlayer : StandardGSYVideoPlayer {
 

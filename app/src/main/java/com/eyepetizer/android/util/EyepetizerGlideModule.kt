@@ -28,9 +28,6 @@ import java.io.InputStream
 
 /**
  * 自定义Glide模块，用于修改Glide默认的配置。
- *
- * @author vipyinzhiwei
- * @since  2020/5/2
  */
 @GlideModule
 class EyepetizerGlideModule : AppGlideModule() {

@@ -18,9 +18,6 @@ package com.eyepetizer.android.logic.dao
 
 /**
  * 应用程序所有Dao操作管理类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/2
  */
 object EyepetizerDatabase {
 

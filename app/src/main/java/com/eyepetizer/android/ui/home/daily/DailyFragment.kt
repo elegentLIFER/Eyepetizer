@@ -40,9 +40,6 @@ import kotlinx.coroutines.launch
 
 /**
  * 首页-日报列表界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/1
  */
 class DailyFragment : BaseFragment() {
 

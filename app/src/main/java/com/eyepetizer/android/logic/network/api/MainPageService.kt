@@ -23,9 +23,7 @@ import retrofit2.http.Url
 
 /**
  * 主页界面，主要包含：（首页，社区，通知，我的）对应的 API 接口。
- *
- * @author vipyinzhiwei
- * @since  2020/5/15
+ 5
  */
 interface MainPageService {
 

@@ -22,9 +22,6 @@ import kotlinx.parcelize.RawValue
 
 /**
  * 视频对应的具体信息，响应实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/14
  */
 data class VideoBeanForClient(
     val ad: Boolean,

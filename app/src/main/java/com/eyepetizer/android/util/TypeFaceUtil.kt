@@ -21,9 +21,6 @@ import com.eyepetizer.android.EyepetizerApplication
 
 /**
  * 自定义字体工具类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/24
  */
 object TypeFaceUtil {
 

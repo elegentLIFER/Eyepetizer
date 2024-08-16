@@ -30,9 +30,6 @@ const val SHARE_WECHAT_MEMORIES = 5
 
 /**
  * 调用系统原生分享工具类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/30
  */
 object ShareUtil {
 

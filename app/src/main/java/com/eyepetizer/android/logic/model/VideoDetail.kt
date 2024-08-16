@@ -19,18 +19,13 @@ package com.eyepetizer.android.logic.model
 /**
  *
  * 视频详情-相关推荐+评论，响应实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/16
  */
 data class VideoDetail(val videoBeanForClient: VideoBeanForClient?, val videoRelated: VideoRelated?, val videoReplies: VideoReplies)
 
 
 /**
  * 视频详情-相关推荐，响应实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/14
+ 4
  */
 data class VideoRelated(val itemList: List<Item>, val count: Int, val total: Int, val nextPageUrl: String?, val adExist: Boolean) : Model() {
 
@@ -101,9 +96,7 @@ data class VideoRelated(val itemList: List<Item>, val count: Int, val total: Int
 
 /**
  * 视频详情-评论列表。响应实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/14
+ 4
  */
 data class VideoReplies(val itemList: List<Item>, val count: Int, val total: Int, val nextPageUrl: String?, val adExist: Boolean) : Model() {
 

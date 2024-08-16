@@ -33,9 +33,6 @@ import com.shuyu.gsyvideoplayer.video.base.GSYBaseVideoPlayer
 
 /**
  * RecyclerView列表自动播放监听类。
- *
- * @author vipyinzhiwei
- * @since 2020/5/26
  */
 class AutoPlayScrollListener(private val itemPlayId: Int, private val rangeTop: Int = PLAY_RANGE_TOP, private val rangeBottom: Int = PLAY_RANGE_BOTTOM) :
     RecyclerView.OnScrollListener() {

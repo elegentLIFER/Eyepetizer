@@ -9,9 +9,6 @@ import com.eyepetizer.android.EyepetizerApplication
 
 /**
  * 获取DataStore实例
- *
- * @author vipyinzhiwei
- * @since  2021/5/12
  */
 
 val Context.dataStore: DataStore<Preferences> by preferencesDataStore(

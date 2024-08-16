@@ -20,9 +20,7 @@ import com.flyco.tablayout.listener.CustomTabEntity
 
 /**
  * 与CommonTabLayout搭配使用的实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/10
+ 0
  */
 class TabEntity(private val title: String, private val selectedIcon: Int = 0, private val unSelectedIcon: Int = 0) : CustomTabEntity {
 

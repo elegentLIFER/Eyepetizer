@@ -37,9 +37,6 @@ import com.umeng.analytics.MobclickAgent
 
 /**
  * 我的界面。
- *
- * @author vipyinzhiwei
- * @since  2020/4/29
  */
 class MineFragment : BaseFragment() {
 

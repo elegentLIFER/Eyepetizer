@@ -28,9 +28,6 @@ import com.eyepetizer.android.util.GlobalUtil
 
 /**
  * 设置界面
- *
- * @author vipyinzhiwei
- * @since  2020/5/19
  */
 class SettingActivity : BaseActivity() {
 

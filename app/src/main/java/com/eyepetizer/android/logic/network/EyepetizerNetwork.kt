@@ -21,9 +21,6 @@ import com.eyepetizer.android.logic.network.api.VideoService
 
 /**
  * 管理所有网络请求。
- *
- * @author vipyinzhiwei
- * @since  2020/5/2
  */
 class EyepetizerNetwork {
 

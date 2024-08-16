@@ -26,9 +26,7 @@ import com.eyepetizer.android.ui.login.LoginActivity
 
 /**
  * 通知-互动列表界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/1
+ 
  */
 class InteractionFragment : BaseFragment() {
 

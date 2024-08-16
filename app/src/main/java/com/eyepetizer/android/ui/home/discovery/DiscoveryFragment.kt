@@ -40,9 +40,6 @@ import kotlinx.coroutines.launch
 
 /**
  * 首页-发现列表界面。
- *
- * @author vipyinzhiwei
- * @since  2020/4/30
  */
 class DiscoveryFragment : BaseFragment() {
 

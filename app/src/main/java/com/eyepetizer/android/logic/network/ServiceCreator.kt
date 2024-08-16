@@ -35,9 +35,6 @@ import java.util.*
 
 /**
  * 网络基础服务配置。
- *
- * @author vipyinzhiwei
- * @since  2020/5/2
  */
 object ServiceCreator {
 

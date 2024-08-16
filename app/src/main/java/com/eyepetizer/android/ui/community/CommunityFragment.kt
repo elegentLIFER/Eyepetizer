@@ -35,9 +35,7 @@ import org.greenrobot.eventbus.EventBus
 
 /**
  * 社区主界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/1
+
  */
 class CommunityFragment : BaseViewPagerFragment() {
 

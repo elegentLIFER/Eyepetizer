@@ -18,9 +18,6 @@ package com.eyepetizer.android.logic.model
 
 /**
  * 首页-发现列表，响应实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/9
  */
 data class Discovery(val itemList: List<Item>, val count: Int, val total: Int, val nextPageUrl: String?, val adExist: Boolean) : Model() {
 

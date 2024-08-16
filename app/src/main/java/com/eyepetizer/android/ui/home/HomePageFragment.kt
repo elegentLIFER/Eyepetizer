@@ -37,9 +37,6 @@ import org.greenrobot.eventbus.EventBus
 
 /**
  * 首页主界面。
- *
- * @author vipyinzhiwei
- * @since  2020/4/30
  */
 class HomePageFragment : BaseViewPagerFragment() {
 

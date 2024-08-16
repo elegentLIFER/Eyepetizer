@@ -18,9 +18,6 @@ package com.eyepetizer.android.logic.model
 
 /**
  * 社区-关注列表，响应实体类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/2
  */
 data class Follow(val itemList: List<Item>, val count: Int, val total: Int, val nextPageUrl: String?, val adExist: Boolean) : Model() {
 

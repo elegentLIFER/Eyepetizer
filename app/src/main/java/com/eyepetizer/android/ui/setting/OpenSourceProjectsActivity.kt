@@ -37,9 +37,6 @@ import com.eyepetizer.android.util.GlobalUtil
 
 /**
  * 开源项目列表界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/24
  */
 class OpenSourceProjectsActivity : BaseActivity() {
 

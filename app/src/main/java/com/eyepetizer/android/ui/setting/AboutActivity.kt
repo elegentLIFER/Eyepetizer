@@ -33,9 +33,6 @@ import com.umeng.analytics.MobclickAgent
 
 /**
  * 关于界面。
- *
- * @author vipyinzhiwei
- * @since  2020/5/24
  */
 class AboutActivity : BaseActivity() {
 

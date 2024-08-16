@@ -39,9 +39,6 @@ import kotlinx.coroutines.withContext
 
 /**
  * 主页界面，主要包含：（首页，社区，通知，我的），对应的仓库数据管理。
- *
- * @author vipyinzhiwei
- * @since  2020/5/2
  */
 class MainPageRepository private constructor(private val mainPageDao: MainPageDao, private val eyepetizerNetwork: EyepetizerNetwork) {
 

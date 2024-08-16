@@ -22,9 +22,6 @@ import java.util.*
 
 /**
  * 管理应用程序中所有Activity。
- *
- * @author vipyinzhiwei
- * @since  2020/4/29
  */
 object ActivityCollector {
 

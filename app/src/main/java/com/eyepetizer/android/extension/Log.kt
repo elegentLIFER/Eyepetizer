@@ -21,9 +21,6 @@ import com.eyepetizer.android.BuildConfig
 
 /**
  * 日志调试工具类。
- *
- * @author vipyinzhiwei
- * @since  2020/4/29
  */
 private const val VERBOSE = 1
 private const val DEBUG = 2

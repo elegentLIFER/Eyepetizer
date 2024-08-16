@@ -23,9 +23,6 @@ import com.eyepetizer.android.logic.model.VideoReplies
 
 /**
  * 视频相关，对应的Dao操作类。
- *
- * @author vipyinzhiwei
- * @since  2020/5/15
  */
 class VideoDao {
 

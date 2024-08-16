@@ -26,9 +26,6 @@ import com.shuyu.gsyvideoplayer.video.base.GSYVideoView
 
 /**
  * 常见列表，视频播放器。
- *
- * @author vipyinzhiwei
- * @since 2020/5/26
  */
 class AutoPlayerVideoPlayer : StandardGSYVideoPlayer {
 

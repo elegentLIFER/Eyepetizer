@@ -26,9 +26,6 @@ import com.eyepetizer.android.util.TypeFaceUtil
 
 /**
  * 带有自定义字体TextView。
- *
- * @author vipyinzhiwei
- * @since  2020/5/24
  */
 class TypefaceTextView : AppCompatTextView {
 

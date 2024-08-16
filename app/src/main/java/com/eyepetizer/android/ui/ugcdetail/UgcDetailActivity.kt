@@ -34,9 +34,6 @@ import com.shuyu.gsyvideoplayer.GSYVideoManager
 
 /**
  * 社区-推荐详情页。
- *
- * @author vipyinzhiwei
- * @since  2020/5/24
  */
 class UgcDetailActivity : BaseActivity() {
 
