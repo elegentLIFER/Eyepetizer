@@ -30,13 +30,9 @@ import com.eyepetizer.android.logic.network.api.VideoService
  * 视频详情界面绑定的ViewModel。
  */
 class NewDetailViewModel(repository: VideoRepository) : ViewModel() {
-
     var relatedDataList = ArrayList<VideoRelated.Item>()
-
     var repliesDataList = ArrayList<VideoReplies.Item>()
-
     var videoInfoData: NewDetailActivity.VideoInfo? = null
-
     var videoId: Long = 0L
 
     private var repliesLiveData_ = MutableLiveData<String>()
@@ -47,37 +43,37 @@ class NewDetailViewModel(repository: VideoRepository) : ViewModel() {
 
     val videoDetailLiveData = Transformations.switchMap(videoDetailLiveData_) {
         liveData {
-            val resutlt = try {
+            val result = try {
                 val videoDetail = repository.refreshVideoDetail(it.videoId, it.repliesUrl)   //视频信息+相关推荐+评论
                 Result.success(videoDetail)
             } catch (e: Exception) {
                 Result.failure<VideoDetail>(e)
             }
-            emit(resutlt)
+            emit(result)
         }
     }
 
     val repliesAndRepliesLiveData = Transformations.switchMap(repliesAndRepliesLiveData_) {
         liveData {
-            val resutlt = try {
+            val result = try {
                 val videoDetail = repository.refreshVideoRelatedAndVideoReplies(it.videoId, it.repliesUrl)   //相关推荐+评论
                 Result.success(videoDetail)
             } catch (e: Exception) {
                 Result.failure<VideoDetail>(e)
             }
-            emit(resutlt)
+            emit(result)
         }
     }
 
     val repliesLiveData = Transformations.switchMap(repliesLiveData_) {
         liveData {
-            val resutlt = try {
+            val result = try {
                 val videoDetail = repository.refreshVideoReplies(it)   //评论
                 Result.success(videoDetail)
             } catch (e: Exception) {
                 Result.failure<VideoReplies>(e)
             }
-            emit(resutlt)
+            emit(result)
         }
     }
 

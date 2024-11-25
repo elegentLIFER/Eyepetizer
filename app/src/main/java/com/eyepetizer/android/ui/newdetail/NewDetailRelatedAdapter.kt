@@ -38,7 +38,9 @@ import com.eyepetizer.android.ui.login.LoginActivity
  * 视频详情-相关推荐列表绑定的适配器
  4
  */
-class NewDetailRelatedAdapter(private val activity: NewDetailActivity, val dataList: List<VideoRelated.Item>, private var videoInfoData: NewDetailActivity.VideoInfo?) :
+class NewDetailRelatedAdapter(private val activity: NewDetailActivity,
+                              val dataList: List<VideoRelated.Item>,
+                              private var videoInfoData: NewDetailActivity.VideoInfo?) :
     RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = when (viewType) {

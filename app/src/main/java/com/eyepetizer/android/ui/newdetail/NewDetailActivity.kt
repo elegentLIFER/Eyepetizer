@@ -60,12 +60,12 @@ class NewDetailActivity : BaseActivity() {
     private val binding: ActivityNewDetailBinding
         get() = _binding!!
 
-    private val viewModel by lazy { ViewModelProvider(this, InjectorUtil.getNewDetailViewModelFactory()).get(NewDetailViewModel::class.java) }
+    private val viewModel by lazy {
+        ViewModelProvider(this, InjectorUtil.getNewDetailViewModelFactory()).get(NewDetailViewModel::class.java)
+    }
 
     private lateinit var relatedAdapter: NewDetailRelatedAdapter
-
     private lateinit var replyAdapter: NewDetailReplyAdapter
-
     private lateinit var mergeAdapter: ConcatAdapter
 
     private var orientationUtils: OrientationUtils? = null

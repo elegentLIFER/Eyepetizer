@@ -43,15 +43,16 @@ import com.zhpan.bannerview.BaseBannerAdapter
 import com.zhpan.bannerview.BaseViewHolder
 import de.hdodenhof.circleimageview.CircleImageView
 
-class CommendAdapter(val fragment: CommendFragment) : PagingDataAdapter<CommunityRecommend.Item, RecyclerView.ViewHolder>(DIFF_CALLBACK) {
+class CommendAdapter(val fragment: CommendFragment) :
+    PagingDataAdapter<CommunityRecommend.Item, RecyclerView.ViewHolder>(DIFF_CALLBACK) {
 
     override fun getItemViewType(position: Int): Int {
         val item = getItem(position)
         return when (item?.type) {
-            STR_HORIZONTAL_SCROLLCARD_TYPE -> {
+            STR_HORIZONTAL_SCROLL_CARD_TYPE -> {
                 when (item.data.dataType) {
-                    STR_ITEM_COLLECTION_DATA_TYPE -> HORIZONTAL_SCROLLCARD_ITEM_COLLECTION_TYPE
-                    STR_HORIZONTAL_SCROLLCARD_DATA_TYPE -> HORIZONTAL_SCROLLCARD_TYPE
+                    STR_ITEM_COLLECTION_DATA_TYPE -> HORIZONTAL_SCROLL_CARD_ITEM_COLLECTION_TYPE
+                    STR_HORIZONTAL_SCROLL_CARD_DATA_TYPE -> HORIZONTAL_SCROLL_CARD_TYPE
                     else -> Const.ItemViewType.UNKNOWN
                 }
             }
@@ -64,10 +65,10 @@ class CommendAdapter(val fragment: CommendFragment) : PagingDataAdapter<Communit
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = when (viewType) {
-        HORIZONTAL_SCROLLCARD_ITEM_COLLECTION_TYPE -> {
+        HORIZONTAL_SCROLL_CARD_ITEM_COLLECTION_TYPE -> {
             HorizontalScrollcardItemCollectionViewHolder(R.layout.item_community_horizontal_scrollcard_item_collection_type.inflate(parent))
         }
-        HORIZONTAL_SCROLLCARD_TYPE -> {
+        HORIZONTAL_SCROLL_CARD_TYPE -> {
             HorizontalScrollcardViewHolder(R.layout.item_community_horizontal_scrollcard_type.inflate(parent))
         }
         FOLLOW_CARD_TYPE -> {
@@ -295,21 +296,20 @@ class CommendAdapter(val fragment: CommendFragment) : PagingDataAdapter<Communit
     }
 
     companion object {
-
         const val TAG = "CommendAdapter"
 
-        const val STR_HORIZONTAL_SCROLLCARD_TYPE = "horizontalScrollCard"
+        const val STR_HORIZONTAL_SCROLL_CARD_TYPE = "horizontalScrollCard"
         const val STR_COMMUNITY_COLUMNS_CARD = "communityColumnsCard"
 
-        const val STR_HORIZONTAL_SCROLLCARD_DATA_TYPE = "HorizontalScrollCard"
+        const val STR_HORIZONTAL_SCROLL_CARD_DATA_TYPE = "HorizontalScrollCard"
         const val STR_ITEM_COLLECTION_DATA_TYPE = "ItemCollection"
         const val STR_FOLLOW_CARD_DATA_TYPE = "FollowCard"
 
         const val STR_VIDEO_TYPE = "video"
         const val STR_UGC_PICTURE_TYPE = "ugcPicture"
 
-        const val HORIZONTAL_SCROLLCARD_ITEM_COLLECTION_TYPE = 1   //type:horizontalScrollCard -> dataType:ItemCollection
-        const val HORIZONTAL_SCROLLCARD_TYPE = 2                   //type:horizontalScrollCard -> dataType:HorizontalScrollCard
+        const val HORIZONTAL_SCROLL_CARD_ITEM_COLLECTION_TYPE = 1   //type:horizontalScrollCard -> dataType:ItemCollection
+        const val HORIZONTAL_SCROLL_CARD_TYPE = 2                   //type:horizontalScrollCard -> dataType:HorizontalScrollCard
         const val FOLLOW_CARD_TYPE = 3                             //type:communityColumnsCard -> dataType:FollowCard
 
         private val DIFF_CALLBACK = object : DiffUtil.ItemCallback<CommunityRecommend.Item>() {

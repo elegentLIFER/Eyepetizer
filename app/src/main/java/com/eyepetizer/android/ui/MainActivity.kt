@@ -37,12 +37,10 @@ class MainActivity : BaseActivity() {
 
     private var backPressTime = 0L
 
+    //四个主Fragment
     private var homePageFragment: HomePageFragment? = null
-
     private var communityFragment: CommunityFragment? = null
-
     private var notificationFragment: NotificationFragment? = null
-
     private var mineFragment: MineFragment? = null
 
     private val fragmentManager: FragmentManager by lazy { supportFragmentManager }
@@ -54,7 +52,6 @@ class MainActivity : BaseActivity() {
     }
 
     override fun onDestroy() {
-        super.onDestroy()
         super.onDestroy()
         _binding = null
     }

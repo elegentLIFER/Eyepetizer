@@ -2,6 +2,7 @@ package com.eyepetizer.android.ui
 
 import android.Manifest
 import android.os.Bundle
+import android.util.Log
 import android.view.animation.AlphaAnimation
 import android.view.animation.Animation
 import android.view.animation.ScaleAnimation
@@ -43,6 +44,7 @@ class SplashActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Log.e(TAG, "onCreate")
         requestWriteExternalStoragePermission()
     }
 
@@ -64,6 +66,7 @@ class SplashActivity : BaseActivity() {
     }
 
     private fun requestWriteExternalStoragePermission() {
+        Log.e(TAG, "requestWriteExternalStoragePermission: ")
         PermissionX.init(this@SplashActivity).permissions(Manifest.permission.WRITE_EXTERNAL_STORAGE)
             .onExplainRequestReason { scope, deniedList ->
                 val message = GlobalUtil.getString(R.string.request_permission_picture_processing)
@@ -79,6 +82,7 @@ class SplashActivity : BaseActivity() {
     }
 
     private fun requestReadPhoneStatePermission() {
+        Log.e(TAG, "requestReadPhoneStatePermission: ")
         PermissionX.init(this@SplashActivity).permissions(Manifest.permission.READ_PHONE_STATE)
             .onExplainRequestReason { scope, deniedList ->
                 val message = GlobalUtil.getString(R.string.request_permission_access_phone_info)

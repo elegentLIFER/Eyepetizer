@@ -37,7 +37,8 @@ import com.eyepetizer.android.util.GlobalUtil
  * 视频详情-评论列表绑定的适配器
  4
  */
-class NewDetailReplyAdapter(val activity: NewDetailActivity, val dataList: List<VideoReplies.Item>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class NewDetailReplyAdapter(val activity: NewDetailActivity, val dataList: List<VideoReplies.Item>)
+    : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     override fun getItemCount() = dataList.size
 
